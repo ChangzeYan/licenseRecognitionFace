@@ -11,7 +11,6 @@ using System.Windows.Input;
 //using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-
 using Microsoft.Win32;
 using System.Drawing; //需要在解决方案的引用中添加“System.Drawing”
 using System.Drawing.Imaging;
@@ -1000,7 +999,7 @@ namespace licenseRecognition
             DirectoryInfo dir = new DirectoryInfo(path);
             //DirectoryInfo[] dirs = dir.GetDirectories();
             FileInfo[] files = dir.GetFiles("*.bmp");
-
+      
             int i = 0, j = 0;
             try
             {
@@ -1011,6 +1010,7 @@ namespace licenseRecognition
                     //this.listBox1.Items.Add(dir + f.ToString());
                     i++;
                 }
+
 
             }
             catch (Exception ex)
